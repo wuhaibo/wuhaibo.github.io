@@ -104,12 +104,6 @@ collections:
     name: pages
     delete: false
     files:
-      - name: tags-index.md
-        label: 標簽
-        file: source\tags\index.md
-        editor:
-          preview: true
-        fields: *ref_0
       - name: about-index.md
         label: about
         file: source\about\index.md
@@ -119,6 +113,12 @@ collections:
       - name: categories-index.md
         label: 文章分类
         file: source\categories\index.md
+        editor:
+          preview: true
+        fields: *ref_0
+      - name: tags-index.md
+        label: 標簽
+        file: source\tags\index.md
         editor:
           preview: true
         fields: *ref_0
