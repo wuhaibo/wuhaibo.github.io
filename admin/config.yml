@@ -24,9 +24,18 @@ collections:
       - label: Title
         name: title
         widget: string
+      - label: cover
+        name: cover
+        widget: string
+        required: false
+      - label: top_image
+        name: top_image
+        widget: string
+        required: false
       - label: Description
         name: description
         widget: string
+        required: false
       - label: Publish Date
         name: date
         widget: datetime
@@ -104,15 +113,15 @@ collections:
     name: pages
     delete: false
     files:
-      - name: tags-index.md
-        label: 標簽
-        file: source\tags\index.md
-        editor:
-          preview: true
-        fields: *ref_0
       - name: about-index.md
         label: about
         file: source\about\index.md
+        editor:
+          preview: true
+        fields: *ref_0
+      - name: tags-index.md
+        label: 標簽
+        file: source\tags\index.md
         editor:
           preview: true
         fields: *ref_0
